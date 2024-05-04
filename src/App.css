@@ -11,25 +11,21 @@ body {
   background-position: center;
 }
 
-/* Hero */
-
-.HeroImg {
-  width: 100%;
-  height: 250px;
-}
-.hero-col h1 {
-  margin-top: 30px;
+/* Logo */
+.Logo-Title {
   font-size: 50px;
   color: white;
 }
-.hero-col h3 {
-  font-size: 30px;
-  color: white;
+.Logo-col {
+  font-size: xx-large;
+  margin-top: 30px;
+  color: rgb(0, 75, 122);
 }
-.hero-col p {
-  font-size: x-large;
-  color: white;
+.Logo-img {
+  width: 700px;
+  height: 400px;
 }
+
 
 /* NavBar*/
 
@@ -41,33 +37,28 @@ body {
 .nav-link a {
   font-size: 50px;
 }
-/* card */
-.card img {
-  height: 600px;
-}
-
-/* item-list-container */
-
-.item-list-container {
-  color: white;
-
-}
-.item-list-container li {
-  font-size: xx-large;
-  list-style: none;
-  background-color: black;
-  margin-top: 10px;
-  margin-left: 30px;
-}
-.item-list-container img {
+/* Card */ 
+.container-card {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  width: 450px;
-  height: 450px;
+  justify-content: space-between;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  margin-right: 30px;
+}
+.card img {
+  width: 320px;
+  height: 400px;
+}
+/* Footer */
+.container-footer {
+  background-color: rgb(42, 44, 73);
+  width: 1200px;
   margin: 10px;
 }
-.itemList {
-  margin: 0;
-  display: flex; 
-  flex-wrap: wrap; 
+.footer img {
+  width: 400px;
+  height: 250px;
 }

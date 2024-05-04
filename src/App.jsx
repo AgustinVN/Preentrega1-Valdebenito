@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Hero from './assets/Hero'
+import Logo from './assets/Logo'
 import NavBar from './assets/NavBar'
-import Card from './assets/Card'
-import ItemListContainer from './assets/ItemListContainer'
+import Cards from './assets/Cards'
+import Footer from './assets/Footer'
+import Contacto from './assets/Contacto'
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,10 +13,15 @@ function App() {
   return (
    <div className='container'>
     <NavBar />
-    <Hero />
-    <Card />
-    <ItemListContainer />
-   </div>
+    <Logo />
+    <BrowserRouter>
+      <Routes>
+      <Route path={'/'} element={<Cards />} />
+      <Route path={'/Contacto'} element={<Contacto />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+    </div>
 
   )
 }

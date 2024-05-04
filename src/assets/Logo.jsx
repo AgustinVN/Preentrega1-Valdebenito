@@ -1,5 +1,5 @@
 
-const Hero = () =>{
+const Logo = () =>{
 
     return (
     <div className="container">
@@ -8,9 +8,10 @@ const Hero = () =>{
                 
             </div>
         </div>
-        <div className="hero-row">
-            <div className="hero-col">
-                <h1> AstroShop </h1>
+        <div className="Logo-row">
+            <div className="Logo-col">
+                <h1 className="Logo-Title"> AstroShop </h1>
+                <img className="Logo-img" src="/images/Logo.png" alt="" />
                 <h3> Tu ventana al universo </h3>
                 <p> Descubre una amplia gama de telescopios y accesorios astronómicos para explorar el cosmos desde casa </p>
             </div>
@@ -19,4 +20,4 @@ const Hero = () =>{
     )
 } 
 
-    export default Hero;
+    export default Logo;
